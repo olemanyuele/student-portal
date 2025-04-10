@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Admin Panel</h1>
+    
+    <h2>🎯 Manage Student Grades & Assignments</h2>
+    <select id="studentSelector" onchange="loadStudentData()"></select>
+    
+    <h3>Assignments</h3>
+    <textarea id="editAssignments" rows="4"></textarea>
+
+    <h3>Grades</h3>
+    <textarea id="editGrades" rows="4"></textarea>
+    
+    <button onclick="saveStudentData()">Save</button>
+
+    <h2>📥 All Student Submissions</h2>
+    <div id="allSubmissions"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
